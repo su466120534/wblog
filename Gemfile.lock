@@ -1,10 +1,19 @@
 GIT
-  remote: git://github.com/amatsuda/kaminari.git
-  revision: be3a2c9a2182fae145e7ff88223feb4d55ed539d
+  remote: https://github.com/amatsuda/kaminari.git
+  revision: 1c9ec3603d4c45f424e9a3367644931d19070505
   specs:
-    kaminari (1.0.0.alpha)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
+    kaminari (1.0.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.0.1)
+      kaminari-activerecord (= 1.0.1)
+      kaminari-core (= 1.0.1)
+    kaminari-actionview (1.0.1)
+      actionview
+      kaminari-core (= 1.0.1)
+    kaminari-activerecord (1.0.1)
+      activerecord
+      kaminari-core (= 1.0.1)
+    kaminari-core (1.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -386,7 +395,7 @@ DEPENDENCIES
   uglifier (>= 2.7.2)
 
 RUBY VERSION
-   ruby 2.2.3p173
+   ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
