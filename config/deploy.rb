@@ -1,5 +1,11 @@
 set :stages, %w(en zh)
 set :default_stage, 'zh'
+set :application, 'wblog'
+set :repo_url, 'git@github.com:su466120534/wblog.git'  # 这里填的是每个人自己的repo地址
+set :deploy_to, '/home/apps/wblog'
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle')
+
 
 require 'mina/multistage'
 require 'mina/bundler'
