@@ -1,3 +1,5 @@
+lock "3.8.0"
+
 set :stages, %w(en zh)
 set :default_stage, 'zh'
 set :application, 'wblog'

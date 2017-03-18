@@ -45,6 +45,12 @@ gem 'mina-logs', require: false
 gem 'browser_warrior'
 
 group :development do
+  gem "capistrano", "~> 3.4"
+  gem "capistrano-rvm"
+  gem "capistrano-rails"
+end
+
+group :development do
   gem 'guard'
   gem 'guard-rails'
   gem 'guard-rspec', require: false
@@ -61,12 +67,6 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec-sidekiq'
   gem "codeclimate-test-reporter", group: :test, require: nil
-end
-
-group :development do
-  gem "capistrano", "~> 3.4"
-  gem "capistrano-rvm"
-  gem "capistrano-rails"
 end
 
 group :test, :development do
