@@ -63,6 +63,12 @@ group :test do
   gem "codeclimate-test-reporter", group: :test, require: nil
 end
 
+group :development do
+  gem "capistrano", "~> 3.4"
+  gem "capistrano-rvm"
+  gem "capistrano-rails"
+end
+
 group :test, :development do
   gem "rspec-rails", ">= 2.8.1"
   gem 'byebug'
